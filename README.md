@@ -36,7 +36,7 @@ virtualenv venv
 pip install -r requirements.txt
 ```
 
-确保`dois.txt`和脚本在同一个目录下，并符合上面的[标准格式](## 输入文件格式)
+确保`dois.txt`和脚本在同一个目录下，并符合上面的[标准格式](##输入文件格式)
 
 运行脚本：
 
@@ -44,7 +44,7 @@ pip install -r requirements.txt
 python doi2toml.py
 ```
 
-运行时会输出信息提示是否转换成功，用了什么样的[方法](## 转换方法)
+运行时会输出信息提示是否转换成功，用了什么样的[方法](##转换方法)
 
 运行结束后输出文件`out.toml`即转换结果，需要手动补全其中缺少的信息
 
