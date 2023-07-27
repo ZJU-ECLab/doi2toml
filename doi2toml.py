@@ -57,7 +57,6 @@ for i in range(0, len(dois)):
             bib = subprocess.run(['doi2bib', doi], stdout = subprocess.PIPE).stdout
             article = bibtexparser.parse_string(bib.decode('utf-8')).entries[0].fields_dict
             toml_dict['article'][str(i + 1)]['title'] = article['title'].value
-            toml_dict['article'][str(i + 1)]['doi'] = 'https://doi.org/{}'.format(article['doi'].value)
             toml_dict['article'][str(i + 1)]['authors'] = ', '.join(article['author'].value.split(' and '))
             toml_dict['article'][str(i + 1)]['journal'] = article['journal'].value
             print(f'article.{i + 1} succeeded with doi2bib')
