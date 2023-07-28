@@ -50,7 +50,7 @@ python doi2toml.py
 
 ## 转换方法
 
-目前有2种方法：
+目前有3种方法：
 
 1. scopus
 
@@ -59,3 +59,7 @@ python doi2toml.py
 2. doi2bib
 
 使用`doi2bib`，无法获取abstract和keywords，其他信息基本可以获取
+
+3. semanticscholar
+
+使用`semanticscholar`api，无法获取keywords，其他基本可以获取
