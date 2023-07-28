@@ -2,3 +2,4 @@ doi2bib==0.3.0
 bibtexparser @ git+https://github.com/sciunto-org/python-bibtexparser@main --global-option='--no-cache-dir --force-reinstall'
 pybliometrics==3.5.2
 toml==0.10.2
+semanticscholar==0.4.1
