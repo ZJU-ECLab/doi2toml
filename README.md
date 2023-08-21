@@ -24,6 +24,14 @@ doi|publish|category|summary
 
 ## 运行脚本
 
+### 使用GitHub Actions
+
+fork此仓库，修改`doi2toml.py`中的编辑信息，允许actions，发布新的release即可生成toml文件
+
+确保`dois.txt`和脚本在同一个目录下，并符合上面的[标准格式](#输入文件格式)
+
+### 本地生成
+
 建议使用Python虚拟环境（需要通过`pip`安装`virtualenv`）：
 
 ```bash
