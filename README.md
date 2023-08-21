@@ -24,6 +24,8 @@ doi|publish|category|summary
 
 ## 运行脚本
 
+建议本地生成，因为用GitHub actions的话不能指定elsevier的api key，导致无法使用scopus方法
+
 ### 使用GitHub Actions
 
 fork此仓库，修改`doi2toml.py`中的编辑信息，允许actions，发布新的release即可生成toml文件
@@ -53,6 +55,8 @@ python doi2toml.py
 ```
 
 运行时会输出信息提示是否转换成功，用了什么样的[方法](#转换方法)
+
+如果要使用scopus方法，请根据相应api的教程指定api key
 
 运行结束后输出文件`out.toml`即转换结果，需要手动补全其中缺少的信息
 
